@@ -1,0 +1,276 @@
+/*身体各分解部分DIV*/
+
+body div div {
+    background: #A4C639;
+    position: relative;
+}
+
+
+/*顶头文字部分*/
+
+.word {
+
+    position: relative;
+    top: 50px;
+    background-color: #A4C639;
+}
+
+body p {
+    text-align: center;
+    color: #fff;
+}
+
+
+/*整个机器人的外容器*/
+
+.con {
+    width: 220px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 190px;
+    -webkit-animation: anmi 20s infinite;
+}
+
+@-webkit-keyframes anmi {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 250px;
+        top: 0;
+    }
+    50% {
+        left: 0;
+        top: 0;
+    }
+    75% {
+        left: -250px;
+        top: 0;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+
+/*头部，包含触角，眼睛*/
+
+.head {
+    width: 126px;
+    height: 63px;
+    border-radius: 63px 63px 0 0;
+    top: 45px;
+    left: 44px;
+}
+
+.head:hover {
+    -webkit-transform-origin: bottom left;
+    -webkit-transform: rotate(-5deg);
+}
+
+.tentacle1 {
+    width: 3px;
+    height: 29px;
+    float: left;
+    position: absolute;
+    top: -20px;
+    left: 26px;
+    -webkit-transform: rotate(-30deg);
+}
+
+.tentacle2 {
+    width: 3px;
+    height: 29px;
+    position: absolute;
+    float: left;
+    top: -20px;
+    left: 96px;
+    -webkit-transform: rotate(30deg);
+}
+
+.eye1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+}
+
+.eye2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    left: 84px;
+}
+
+
+/*身体*/
+
+.body {
+    width: 126px;
+    height: 107px;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 0 0 14px 14px;
+    top: 50px;
+    left: 3px;
+}
+
+
+/*左手*/
+
+.l_hand {
+    width: 28px;
+    height: 86px;
+    border-radius: 14px;
+    display: inline-block;
+    top: 30px;
+    left: 10px;
+    -webkit-animation: l_hand 1s infinite;
+}
+
+@-webkit-keyframes l_hand {
+    0% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(8deg);
+    }
+    25% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(-3deg);
+    }
+    75% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(8deg);
+    }
+}
+
+
+/*右手*/
+
+.r_hand {
+    width: 28px;
+    height: 86px;
+    border-radius: 14px;
+    display: inline-block;
+    clear: both;
+    top: 30px;
+    -webkit-animation: r_hand 1s infinite;
+}
+
+@-webkit-keyframes r_hand {
+    0% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(-8deg);
+    }
+    25% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(3deg);
+    }
+    75% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(-8deg);
+    }
+}
+
+.r_hand:hover {
+    -webkit-transform-origin: top;
+    -webkit-transform: rotate(-8deg);
+}
+
+
+/*左脚*/
+
+.l_foot {
+    width: 29px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 0 0 14px 14px;
+    top: 46px;
+    left: 70px;
+    -webkit-animation: l_foot 1s infinite;
+}
+
+
+/*右脚*/
+
+.r_foot {
+    width: 29px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 0 0 14px 14px;
+    top: 46px;
+    left: 80px;
+    -webkit-animation: r_foot 1s infinite;
+}
+
+@-webkit-keyframes l_foot {
+    0% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(5deg);
+    }
+    50% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg)
+    }
+    75% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes r_foot {
+    0% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(5deg)
+    }
+    25% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(-5deg)
+    }
+    75% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform-origin: top;
+        -webkit-transform: rotate(5deg)
+    }
+}
